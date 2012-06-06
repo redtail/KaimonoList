@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="65px" >
+
+        <RelativeLayout
+            android:id="@+id/tab_to_buy_list"
+            android:orientation="vertical" style="@style/tab_content_style" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <ListView
+                android:id="@+id/lv_to_buy_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" android:layout_above="@+id/btn_add_item">
+            </ListView>
+
+            <Button
+                android:id="@+id/btn_add_item"
+                android:layout_weight="1"
+                android:text="@string/btn_add_item" 
+                android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_alignParentBottom="true" style="@style/btn_style"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_cart_list"
+            android:orientation="vertical" style="@style/tab_content_style">
+
+            <ListView
+                android:id="@+id/lv_cart_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" android:layout_above="@+id/sum_space">
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/sum_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_above="@+id/btn_end">
+
+                <TextView
+                    android:id="@+id/tv_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_end"
+                android:layout_weight="1"
+                android:text="@string/btn_end" style="@style/btn_style"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</TabHost>

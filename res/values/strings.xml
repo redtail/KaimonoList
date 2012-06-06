@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, KaimonoListActivity!</string>
+    <string name="app_name">買い物リスト</string>
+    <string name="dlg_delete_title">削除</string>
+    <string name="dlg_delete_message">を削除しますか？</string>
+    <string name="dlg_btn_yes">はい</string>
+    <string name="dlg_btn_no">いいえ</string>
+    <string name="btn_add_item">買うものを増やす</string>
+    <string name="dlg_add_title">追加</string>
+    <string name="btn_end">買い物を終わる</string>
+    <string name="yen">円</string>
+    <string name="unit">コ</string>
+    <string name="tab_to_buy_list">買うものリスト</string>
+    <string name="tab_cart">買い物カート</string>
+    <string name="sum">合計</string>
+
+</resources>
